@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .hero-section,
+    .icons {
+        color: white;
+
+    }
+
+    .hero-section {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        background-color: rgba(0, 0, 0, 0.527);
+    }
+
+    .bg-overlay {
+        display: flex;
+        min-height: 100vh;
+        position: relative;
+        background-image: url(img/hero-bg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .navbar img {
+        width: 13%;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 2rem;
+        font-size: .9rem;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #ffffff9e;
+    }
+
+    .hero-side {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        position: absolute;
+        right: 2%;
+        top: 5%;
+
+
+
+    }
+    .hero-side h1{
+        font-size: .8rem;
+        font-weight: 500;
+        color: white;
+        transform: rotate(-90deg);
+        transition: .3s;
+    }
+    .hero-side h1:hover{
+        cursor: pointer;
+        color: #f26522;
+    }
+    .dash{
+        border-left: 1px solid rgba(255, 255, 255, 0.493);
+        height: 100px;
+position: relative;
+left: 50%;
+    }
+    .scroll{
+        display: flex; flex-direction: column;
+        gap: 3rem;
+    }
+    .hero-detail {
+        padding-top: 2rem;
+        display: flex;
+        width: 80%;
+        align-items: center;
+
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        align-items: center;
+        gap: 1rem;
+        transform: scale(1.5);
+    }
+
+    .button {
+        width: 28%;
+        border: 2px solid #f26522;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .play-btn {
+        background-color: rgba(255, 255, 255, 0.253);
+        width: 60px;
+        border-radius: 50%;
+        padding: 20.5px;
+        transition: .3s;
+    }
+
+    .right-side p {
+        font-size: .6rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    .play-btn:hover{
+        background-color: #f26522;
+        cursor:pointer
+    }
+
+    .button-content {
+        padding: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .button::before {
+        content: "";
+        background-color: #db5a1e;
+        left: -100%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .3s ease-in-out;
+
+
+    }
+
+    .button:hover::before {
+        left: 0;
+
+    }
+
+    .left-side h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        width: 80%;
+        line-height: 5rem;
+    }
+
+    .left-side h2 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .icons {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        gap: 2rem;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="bg-overlay">
+            <div class="hero-section">
+                <div class="navbar">
+                    <img src="img/logo.svg" alt="">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">SERVICE</a></li>
+                        <li><a href="">WORKS</a></li>
+                        <li><a href="">CONTACT</a></li>
+
+                    </ul>
+                </div>
+                <div class="hero-detail">
+                    <div class="left-side">
+
+                        <h1>We provide creative
+                            solutions to turn your
+                            ideas into digital reality</h1>
+                        <div class="button">
+                            <div class="button-content">
+                                <h2>MORE ABOUT US</h2>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <p>PLAY VIDEO</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="hero-side">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-behance"></i>
+                    <i class="fa-brands fa-dribbble"></i>
+                </div>
+                <div class="scroll">
+                    <div class="dash"></div>
+                    <h1>SCROLL</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
